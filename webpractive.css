@@ -1,0 +1,27 @@
+.dropdown-content { 
+    display: none;
+    background-color: chartreuse;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.575);
+    z-index: 1;
+}   
+.dropdown:hover .dropdown-contnent  {display: block;}
+.menu{ 
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background: #535050;
+        align-items: center;
+        width: max-content;
+        position: relative;
+}
+label{ 
+    color:#fff;
+    display:flex;
+    font-family: Helvetica;
+    margin: auto;
+    padding: 10px 20px;
+    transition: background 0.3s
+}
+
