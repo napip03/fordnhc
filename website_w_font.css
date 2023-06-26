@@ -83,7 +83,9 @@ height: 80px;
         opacity: 0;
     }
 }
-
+.container{
+    overflow:hidden
+}
 .stuff {
   width: 150px;
   height: 150px;
