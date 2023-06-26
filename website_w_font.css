@@ -83,17 +83,17 @@ height: 80px;
         opacity: 0;
     }
 }
+
 .stuff {
   width: 150px;
   height: 150px;
 }
 .box {
   position: relative;
-  top: ;
+  top: 0;
   width: 150px;
   height: 150px;
-  background: red;
-  
+  background: rgb(6, 255, 151);
 }
 
 .box:hover {
