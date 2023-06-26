@@ -1,6 +1,16 @@
 <!doctype html>
 <!-- <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Loading Environment...</p>-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>
+          fordnhc site
+    </title>
+</head>
 <style>
     section {
     line-height: .025;
@@ -26,16 +36,25 @@
     <link href="website_w_font.css" rel="stylesheet" />
   </head>
 <body>
-    
+<script>
+    setInterval(function() {
+        $("#time-display").text(String(new Date().getHours()).padStart(2, '0') + ":" + String(new Date().getMinutes()).padStart(2, '0'));
+    }, 100)
+
+    $(document).ready(function() {
+        $(".meter").removeClass("animate-on-load");
+    })
+</script>
 </body>
 
 <section>
-  <font size="40"><center> <p><centre> welcome! </p> 
+  <font size="40"><center> <p> welcome! </p> 
   <p>please hover your cursor </p>
-  <p><centre> over the icon below. </centre></p></center></font>
-</section>
-<div class = "stuff"> 
-    <center><img src="Elements/yeahicannottakeit.jpg"
+  <p> over the icon below. </p>
+  <div class = "stuff"> 
+  <center><img src="Elements/yeahicannottakeit.jpg"
         width = "150"height = "150"/>
-    <div class="box"> </div></center>
-<div>
+    <div class="box"> </div>
+  </center></font>
+  
+</section>
