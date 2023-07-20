@@ -1,7 +1,10 @@
 <!doctype html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
 <!-- <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Loading Environment...</p>-->
-<html lang="en">    <head>
+<html lang="en">  
+<head>  
     <link href="website_w_font.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible"
@@ -10,9 +13,9 @@
           content="width=device-width, initial-scale=1.0" />
     <title>
           fordnhc site
-    </title>
-</head>
+    </title></head>
 <main>
+    
     <div class = "profile">
         <img src="Elements/actualphotoprofile.jpg" alt="profile_img" width ="256" height ="256">
         <h1> Ford Cullen </h1>
@@ -20,9 +23,12 @@
         <p> the dalles, or, usa</p>
         <p> (any pronouns) </p>
     </div>
-    <div class = "gradient"></div>
+    <div class = "header-bg">
+        <div class = "gradient"></div>
+    </div>
 </main>
 <section>
+    <!--
     <font size="40"><center> <p> welcome! </p> 
     <p>please hover your cursor </p>
     <p> over the icon below. </p>
@@ -31,7 +37,19 @@
           width = "150"height = "150"/>
       <div class="box"> </div>
     </center></font>
+    -->
   </section>
+
+<div class = "fun"> <href="backtotop"> back to top <href> <br>
+    <a>Email Me: <a href=mailto: ford.nhc@gmail.com> ford.nhc@gmail.com <a></a>
+    <div class = "profile">
+        <img src="Elements/actualphotoprofile.jpg" alt="profile_img" width ="256" height ="256">
+        <h1> Ford Cullen </h1>
+        <p> student, Univ. of Southern California, Computer Science/Physics</p>
+        <p> the dalles, or, usa</p>
+        <p> (any pronouns) </p>
+    </div>
+</div>
 <style>
     section {
     line-height: .025;
@@ -51,15 +69,7 @@
 </style>
 
 <body>
-<script>
-    setInterval(function() {
-        $("#time-display").text(String(new Date().getHours()).padStart(2, '0') + ":" + String(new Date().getMinutes()).padStart(2, '0'));
-    }, 100)
-
-    $(document).ready(function() {
-        $(".meter").removeClass("animate-on-load");
-    })
-</script>
+<script src="website_w_font.js"></script>
 </body>
 </html>
 

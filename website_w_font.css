@@ -3,6 +3,9 @@
   height: 200px;
   background:#ff6e7f
 } 
+.section {
+  opacity: 1;
+}
 h1{
   margin-top: .2;
   margin-bottom: 0.2;
@@ -16,7 +19,12 @@ h1{
   z-index: 2;
   text-align:left;
   position: relative;
-
+}
+.fun {
+  position: relative;
+  margin:0;
+  text-align: left;
+  background-image: linear-gradient(left to right, #575B82, #2b5876)
 }
 .box {
   position: relative;
