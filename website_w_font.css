@@ -42,8 +42,9 @@ h1{
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
-.radial-gradient {
-    max-width: 0;
+.p.intro{
+  font-size: 32px;
+  color:aquamarine
 }
 head{
     height: 200px;
@@ -109,6 +110,21 @@ br{
   .gradient:hover::before {
     opacity: 1;
     z-index: -1;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: sticky; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: slategray; /* Set a background color */
+    color: rgb(194, 194, 251); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px;
   }
   .lds-spinner {
     color: official;
