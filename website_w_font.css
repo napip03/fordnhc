@@ -18,16 +18,24 @@ h1{
   margin-top: 0;
   text-align: left;
   background-color: #575B82;
-  background-image: linear-gradient(left to right, #575B82, #2b5876)
+  background-image: linear-gradient(to right, #575B82, #2b5876);
 }
 .arcade {
   position: relative;
-  margin:0;
   margin-top: 0;
   margin-bottom: 0;
+  z-index: 0;
   text-align: left;
-  background-color: #575B82;
-  background-image: linear-gradient(left to right, #575B82, #2b5876)
+  background-image: linear-gradient(to right, #575B82, #2b5876);
+}
+.craneMachine {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  height: 2160px;
+  z-index: 3;
+  background-image: "webpageBack.png";
 }
 .arcade::before {
   position: relative;
@@ -36,7 +44,7 @@ h1{
   margin-bottom: 0;
   z-index: -1;
   text-align: left;
-  background-image: linear-gradient(left to right, #575B82, #2b5876)
+  background-image: linear-gradient(to right, #575B82, #2b5876);
 }
 .box {
   position: relative;
@@ -47,6 +55,7 @@ h1{
 }
 .main {
   margin-bottom: 0;
+  margin-top: 0;
 }
 .box:hover {
   background-color: green;
@@ -65,15 +74,6 @@ h1{
   margin-top: 0;
   margin-bottom: 0;
 }
-head{
-    height: 200px;
-    margin:0;
-    text-align: center;
-    color: #000;
-    background-color:#ff6e7f;
-    line-height: normal;
-    font-family: "DS Bios", 'Courier New', Courier, monospace;
-}
 body{
     margin:0;
     margin-bottom: 0;
@@ -83,14 +83,18 @@ body{
     line-height: normal;
     font-family: "DS Bios", 'Courier New', Courier, monospace;
 }
+a {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 br{
   margin-top:0;
-  background-image:linear-gradient(to bottom left, #493d75, #2b5876);
+  margin-bottom: 0;
 }
-.p2{
+p {
    margin-top:0;
-   background-image:linear-gradient(to bottom left, #493d75, #2b5876);
-  }
+   margin-bottom: 0;
+}
 @font-face  {
     font-family: "DS Bios";
     src: url('Elements/Nintendo-DS-BIOS.ttf') format('truetype');
@@ -150,17 +154,7 @@ br{
     border-radius: 10px; /* Rounded corners */
     font-size: 18px;
   }
-  #darkMode {
-    display: none; /* Hidden by default */
-    position: sticky; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: slategray; /* Set a background color */
-    color: rgb(194, 194, 251); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+  #darkModeToggle{
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px;
