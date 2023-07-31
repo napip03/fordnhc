@@ -12,20 +12,31 @@ h1{
   text-align:left;
   position: relative;
 }
+nav {
+  font-size: 32px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+.scroll-header {
+  text-align: center;
+}
+.light{
+  text-align: right;
+}
 .fun {
   position: relative;
   margin:0;
   margin-top: 0;
   text-align: left;
   background-color: #575B82;
-  background-image: linear-gradient(to right, #575B82, #2b5876);
-}
-.arcade {
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 0;
-  z-index: 0;
-  text-align: left;
   background-image: linear-gradient(to right, #575B82, #2b5876);
 }
 .craneMachine {
@@ -35,7 +46,15 @@ h1{
   text-align: center;
   height: 2160px;
   z-index: 3;
-  background-image: "webpageBack.png";
+  background-image: url("Elements\webpageBack.png"), yellow;
+}
+.arcade {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 0;
+  text-align: left;
+  background-image: linear-gradient(to right, #575B82, #2b5876);
 }
 .arcade::before {
   position: relative;
